@@ -1,3 +1,7 @@
+# Integrantes
+Luis Felipe Duitama Castillo - 20112020005
+Cristhian Yanrob Avila Palacio - 20112020013
+
 # Parqueadero
 Uso de estructuras de datos para organizar la asignación de turnos en los espacios de parqueaderos para motocicletas en la Universidad Distrital FJC
 
