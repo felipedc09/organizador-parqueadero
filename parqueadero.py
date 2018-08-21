@@ -1,18 +1,10 @@
-#-------------------------------------------------------------------------------
-# Name:        módulo1
-# Purpose:
-#
-# Author:      Estudiantes
-#
-# Created:     14/08/2018
-# Copyright:   (c) Estudiantes 2018
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------i
+
 from cola import Cola
+from random import randrange, choice
 from entidades import Estudiante, Moto, Horario
 
 def main():
-    cupos = 4
+    cupos = randrange(1,10)
     parqueaderos = Cola()
 
     horarios = [
@@ -36,12 +28,12 @@ def main():
         Estudiante(20112020005, "Felipe Duitama", 4, 4),
         Estudiante(20112020005, "Felipe Duitama", 1, 5),
         ]
-    for i in estudiantes:
-         print(parqueaderos.items.count)
-##        if parqueaderos.items.count < cupos:
-##            parqueaderos.encolar(i)
-
+    if len(parqueaderos.items) < cupos:
+        estudiante = choice(estudiantes)
+        parqueaderos.encolar(estudiante)
+        estudiantes.remove(estudiante)
     print(parqueaderos.items)
+
 
 if __name__ == '__main__':
     main()
